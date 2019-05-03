@@ -1061,11 +1061,12 @@ class OatmealBgMsgHandlerBase(ABC):
 
     @property
     @abstractmethod
-    def max_gap_sec(self) -> float:
+    def MAX_HEARTBEAT_GAP_SEC(self) -> Optional[float]:
         """
         Defines the maximum time that is permitted to pass without a heartbeat
         (or log message) before a heartbeat is considered to have been missed
         and :meth:`OatmealBgMsgHandler.missing_heartbeat()` is called.
+        If set to None, no background messages are expected.
         """
         raise NotImplementedError
 
