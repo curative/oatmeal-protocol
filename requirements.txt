@@ -1,0 +1,6 @@
+# Requirements for linting and generating annotations for C++ code
+cpplint==1.4.4
+arduinokeywords==1.0.4
+
+# Python development requirements
+-r python/requirements.txt

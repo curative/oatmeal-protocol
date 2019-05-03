@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.5.5
+    environment:
+      # python module 'click' requires the locale to be set
+      - LC_ALL: "C.UTF-8"
+      - LANG: "C.UTF-8"
+    steps:
+      - checkout
+      - run:
+          name: Init submodules
+          command: git submodule update --init --recursive
+      - run:
+          name: Install dependencies
+          command: sudo -H -E .circleci/install-deps.sh
+      - run:
+          name: Lint code with flake8
+          command: flake8
+      - run:
+          name: Check types in Python code with mypy
+          command: 'make mypy'
+      - run:
+          name: Compile Oatmeal and run tests
+          command: 'make clean && make && make test'
+      - run:
+          name: Generate docs
+          command: 'make docs'

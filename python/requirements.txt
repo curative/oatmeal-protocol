@@ -1,0 +1,7 @@
+mypy==0.701
+flake8==3.7.7
+sphinx==2.0.1
+sphinx-autodoc-typehints==1.6.0
+sphinx_rtd_theme==0.4.3
+twine==1.13.0
+-r oatmeal/requirements.txt
