@@ -39,7 +39,7 @@ class OatmealDevice(OatmealBgMsgHandler):
     MAX_FRAME_LEN = OatmealMsg.DEFAULT_MAX_FRAME_LEN
     """ Max frame length for this device """
 
-    MAX_HEARTBEAT_GAP_SEC = None
+    MAX_HEARTBEAT_GAP_SEC = None  # type: Optional[float]
     """ Warn if the time between heartbeats is greater than this time (seconds).
     If set to None, don't warn if no heartbeats seen. """
 
