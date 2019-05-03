@@ -1061,7 +1061,7 @@ class OatmealBgMsgHandlerBase(ABC):
 
     @property
     @abstractmethod
-    def MAX_HEARTBEAT_GAP_SEC(self) -> float:
+    def MAX_HEARTBEAT_GAP_SEC(self) -> Optional[float]:
         """
         Defines the maximum time that is permitted to pass without a heartbeat
         (or log message) before a heartbeat is considered to have been missed
