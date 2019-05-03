@@ -4,9 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="oatmeal-Isaac.Turner",
+    name="oatmeal",
     version="1.0",
-    author="Isaac Turner",
+    author="Shield Dx and Oatmeal Protocol Authors",
     author_email="turner.isaac@gmail.com",
     description="A protocol to control and communicate with Arduino devices from Python.",
     long_description=long_description,
