@@ -1066,6 +1066,7 @@ class OatmealBgMsgHandlerBase(ABC):
         Defines the maximum time that is permitted to pass without a heartbeat
         (or log message) before a heartbeat is considered to have been missed
         and :meth:`OatmealBgMsgHandler.missing_heartbeat()` is called.
+        If set to None, no background messages are expected.
         """
         raise NotImplementedError
 
