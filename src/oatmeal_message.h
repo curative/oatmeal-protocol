@@ -37,7 +37,7 @@ We increment the:
 #define OATMEAL_LIB_VERSION_MAJOR 1
 /** Oatmeal C++ library MINOR version number
 @see `OATMEAL_LIB_VERSION_MAJOR` */
-#define OATMEAL_LIB_VERSION_MINOR 0
+#define OATMEAL_LIB_VERSION_MINOR 1
 
 /** Oatmeal Protocol MAJOR version number
 
