@@ -31,7 +31,7 @@ To create an Arduino library release:
 
 1. Update the version number in `library.properties`
 2. Update the version number in `src/oatmeal_message.h` (`OATMEAL_LIB_VERSION_MAJOR`, `OATMEAL_LIB_VERSION_MINOR`)
-3. Create a release on GitHub, with tag `arduino-vX.Y` and title `Arduino lib release v1.1`
+3. Create a release on GitHub, with tag `arduino-vX.Y` and title `Arduino lib release vX.Y`
 4. Create issue at https://github.com/arduino/Arduino/issues
 
 To create a python release:
