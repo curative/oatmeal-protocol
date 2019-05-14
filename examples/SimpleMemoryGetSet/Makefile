@@ -3,10 +3,15 @@
 #
 
 ARDMK_DIR = ../../Arduino-Makefile
-USER_LIB_PATH = .
+USER_LIB_PATH = ../../
 OBJDIR = build
 BOARD_TAG = teensy36
-ARDUINO_LIBS = oatmeal_protocol
+
+# The Arduino library requires us to have our source in a directory called 'src'
+# in the root of the repo.
+# Arduino-Makefile looks for each library in a directory with its name, so
+# we have to pretend oatmeal-protocol is called 'src'.
+ARDUINO_LIBS = src
 
 #
 # End of params
