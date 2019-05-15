@@ -22,8 +22,7 @@ docs:
 
 
 keywords.txt: $(ARDUINO_FILES)
-	arduino-keywords src/
-	mv src/keywords.txt .
+	arduino-keywords .
 
 
 mypy:

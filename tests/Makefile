@@ -1,6 +1,6 @@
 CXXFLAGS=-Wall -Wextra -std=c++11
 
-OATMEAL_CPP_PATH=../src
+OATMEAL_CPP_PATH=..
 
 ARDUINO_FILES=$(wildcard $(OATMEAL_CPP_PATH)/*.cpp) $(wildcard $(OATMEAL_CPP_PATH)/*.h)
 

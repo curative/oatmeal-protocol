@@ -3,10 +3,10 @@
 #
 
 ARDMK_DIR = ../../Arduino-Makefile
-USER_LIB_PATH = .
+USER_LIB_PATH = ../../../
 OBJDIR = build
 BOARD_TAG = teensy36
-ARDUINO_LIBS = oatmeal_protocol
+ARDUINO_LIBS = oatmeal-protocol
 
 #
 # End of params
