@@ -7,6 +7,8 @@ jobs:
       # python module 'click' requires the locale to be set
       - LC_ALL: "C.UTF-8"
       - LANG: "C.UTF-8"
+    # Specify the directory to clone into (otherwise cloned into '~/project')
+    working_directory: ~/oatmeal-protocol
     steps:
       - checkout
       - run:
