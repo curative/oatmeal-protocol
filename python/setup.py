@@ -6,7 +6,7 @@ with open(os.path.join("..", "README.md"), "r") as fh:
 
 setuptools.setup(
     name="oatmeal",
-    version="1.0",
+    version="1.1",
     author="Shield Dx and Oatmeal Protocol Authors",
     author_email="turner.isaac@gmail.com",
     description="A protocol to control and communicate with Arduino devices from Python.",
