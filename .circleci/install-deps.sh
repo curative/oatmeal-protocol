@@ -22,11 +22,11 @@ then
   if ! [ -e arduino-1.8.2.tar.gz ]
   then
     echo "Trying to fetch Arduino build tools"
-    if ! aws s3 cp s3://oatmeal-protocol-testing/arduino-1.8.2.tar.gz .
+    if ! aws s3 cp s3://linux-embedded-testing/arduino-1.8.2.tar.gz .
     then
       echo "Please run (on your host machine):"
       echo "  cd $BASEDIR/.circleci"
-      echo "  aws s3 cp s3://oatmeal-protocol-testing/arduino-1.8.2.tar.gz ."
+      echo "  aws s3 cp s3://linux-embedded-testing/arduino-1.8.2.tar.gz ."
       exit -1
     fi
   fi
